@@ -28,6 +28,6 @@ Also you can find `docker-composer.yaml` in root of the project.
 - `docker exec -it dc-php-fpm bash -c "composer install && composer dump-autoload -o"` 
 
 ### Run tests `(integration & unit)`
-Currently `13 tests, 19 assertions` are included.
+Currently `xx tests, xx assertions` are included.
 if you are **using** `Docker` to run application, first make sure you have ran above commands, and then run
 ` vendor/bin/phpunit tests` which runs both `unit` and `integration` tests.

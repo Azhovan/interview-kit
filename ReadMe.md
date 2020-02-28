@@ -48,7 +48,7 @@ $providers = [
 by now whenever you need a dependency, you can inject it as a parameter.
 
 ### Migrations
-You may define you table structures in `database/migrations` directory. Just like laravel
+You may define your database table structures in `database/migrations` directory. Just like laravel
 if your migration class name is `AddUsersTable` the corresponding file name would be `add_users_table`.
 
 #### Run migrations

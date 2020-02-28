@@ -17,6 +17,12 @@ Which looks enough for doing any assignment.
 This app is using `.env` file to define it's configurations. you can find it in the root of the project.
 ```bash
 APP_URI=localhost:8000 # used to run integration tests suite, this should be same for application
+DB_CONNECTION= #sqlite or mysql
+DB_HOST=localhost
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+DB_PORT=3306
 ```
 ### Run Application `(With Docker)`
 make sure you have Docker installed. all configurations (dockerfile, nginx) are located inside of `build/` folder.

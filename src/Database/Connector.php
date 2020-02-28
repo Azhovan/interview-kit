@@ -26,11 +26,25 @@ class Database
     private $host;
 
     /**
-     * The sqlite database absolute path
+     * The database driver name
      *
      * @var string
      */
     private $database;
+
+    /**
+     * The database password
+     *
+     * @var string
+     */
+    private $password;
+
+    /**
+     * The database username
+     *
+     * @var string
+     */
+    private $username;
 
     /**
      * Database constructor.
@@ -52,6 +66,8 @@ class Database
         $this->driver = getenv('DB_CONNECTION') ?: 'sqlite';
         $this->host   = getenv('DB_HOST') ?: 'localhost';
         $this->database = getenv('DB_DATABASE') ?: $this->getDefaultPath();
+        $this->username = getenv('DB_USERNAME') ?: 'root';
+        $this->password = getenv('DB_PASSWORD') ?: null;
     }
 
     /**
@@ -61,7 +77,11 @@ class Database
      */
     private function getDefaultPath(): string
     {
-        return __DIR__ . '/../../database/database.sqlite';
+        if ($this->driver === 'sqlite') {
+            return __DIR__ . '/../../database/database.sqlite';
+        }
+
+        throw new \RuntimeException('Invalid database driver');
     }
 
     /**
@@ -76,6 +96,8 @@ class Database
             'driver' => $this->driver,
             'host' => $this->host,
             'database' => $this->database,
+            'username' => $this->username,
+            'password' => $this->password,
         ]);
 
         $this->instance->setAsGlobal();

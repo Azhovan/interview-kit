@@ -32,9 +32,8 @@ Also you can find `docker-composer.yaml` in root of the project. you may run bel
 - `docker exec -it project-php-fpm bash -c "composer install && composer dump-autoload -o"` 
 
 ### Run tests `(integration & unit)`
-Currently `xx tests, xx assertions` are included.
-if you are **using** `Docker` to run application, first make sure you have ran above commands, and then run
-` vendor/bin/phpunit tests` which runs both `unit` and `integration` tests.
+To run integration tests, first make sure you have run above commands to boot the app first, then run ` vendor/bin/phpunit tests`.
+which runs both `unit` and `integration` tests.
 
 ### Dependency Injection 
 If you want to take advantage of dependency injection, you may define an array of dependencies

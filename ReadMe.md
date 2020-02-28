@@ -29,7 +29,7 @@ Make sure you have Docker installed. all configurations (dockerfile, nginx) are 
 Also you can find `docker-composer.yaml` in root of the project. you may run below commands to up and run your application
 
 - `docker-compose build && docker-compose up -d` 
-- `docker exec -it dc-php-fpm bash -c "composer install && composer dump-autoload -o"` 
+- `docker exec -it project-php-fpm bash -c "composer install && composer dump-autoload -o"` 
 
 ### Run tests `(integration & unit)`
 Currently `xx tests, xx assertions` are included.

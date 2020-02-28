@@ -25,10 +25,9 @@ DB_PASSWORD=
 DB_PORT=3306
 ```
 ### Run Application `(With Docker)`
-make sure you have Docker installed. all configurations (dockerfile, nginx) are located inside of `build/` folder.
-Also you can find `docker-composer.yaml` in root of the project.
+Make sure you have Docker installed. all configurations (dockerfile, nginx) are located inside of `build/` folder.
+Also you can find `docker-composer.yaml` in root of the project. you may run below commands to up and run your application
 
-**Run below commands** 
 - `docker-compose build && docker-compose up -d` 
 - `docker exec -it dc-php-fpm bash -c "composer install && composer dump-autoload -o"` 
 
@@ -46,7 +45,7 @@ $providers = [
     'Bar' => Bar::class
 ];
 ```
-by now whenever you need a dependency, you can inject it as an parameter.
+by now whenever you need a dependency, you can inject it as a parameter.
 
 ### Migrations
 You may define you table structures in `database/migrations` directory. Just like laravel

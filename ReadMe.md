@@ -1,6 +1,5 @@
 ## PHP Interview boilerplate kit
 This package will help you speed up your development if you have been given a technical assignment.
-Most of the time companies ask you to not to use any framework in their code challenges. 
 
 following are embedded in this kit:
 - PHPUnit 

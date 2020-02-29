@@ -1,5 +1,5 @@
 ## PHP Interview boilerplate kit
-This package will help you speed up your development if you have been given a technical assignment.
+This package will help you to speed up your development if you have been given a technical assignment.
 
 following are embedded in this kit:
 - PHPUnit 

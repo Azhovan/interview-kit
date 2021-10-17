@@ -1,15 +1,14 @@
 ## PHP Interview boilerplate kit
-This package will help you to speed up your development if you have been given a technical assignment.
+This package helps you to speed up your development if you have been given a technical assignment.
 
-following are embedded in this kit:
+Kit features:
 - PHPUnit 
 - Laravel ORM and Migrations  (default database is SQLite)
-- Laravel Routing, Controllers, and validators
+- Laravel Routings
+- Laravel Controllers and validators
 - Guzzle Http client
 - Fractal
 - PHP dotenv
-
-Which looks enough for doing any assignment.
 
     
 ### Application configuration
